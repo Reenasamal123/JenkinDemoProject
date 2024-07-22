@@ -1,0 +1,25 @@
+pipeline{
+agent any
+stages{
+stage('Compile'){
+steps{
+echo "compile completed"
+}
+}
+stage('Junit'){
+steps{
+echo "tested completed"
+}
+}
+stage('Quality-Gate'){
+steps{
+echo "Quality-Gate completed"
+}
+}
+stage('Deploy'){
+steps{
+echo "Deploy completed"
+}
+}
+}
+}
